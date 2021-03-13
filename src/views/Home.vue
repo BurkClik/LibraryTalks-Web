@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <h1>Bitcoin Price Index</h1>
+    <h1 class=" text-4xl text-green-600">KİTAPLAR</h1>
 
   <section v-if="errored">
     <p>We're sorry, we're not able to retrieve this information at
