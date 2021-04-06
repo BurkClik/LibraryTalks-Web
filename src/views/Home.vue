@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    <Navbar />
     <h1 class=" text-4xl text-green-600">KİTAPLAR</h1>
 
   <section v-if="errored">
@@ -29,11 +30,13 @@
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component';
 import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
+import Navbar from '@/components/Navbar.vue';
 import axios from 'axios';
 
 @Options({
   components: {
     HelloWorld,
+    Navbar,
   },
   data() {
     return {
